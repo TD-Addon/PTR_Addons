@@ -1,0 +1,47 @@
+: Khalaan skybox
+TR\i\tr_khalaan_sky.nif=ignore
+
+[dynamic_vis]
+
+: Nav Andaram
+tr_m7_nva_stage0 = global tr_m7_nva_buildstage 0
+tr_m7_nva_stage1 = global tr_m7_nva_buildstage 1
+tr_m7_nva_stage1_2 = global tr_m7_nva_buildstage 1-2
+tr_m7_nva_stage1_3 = global tr_m7_nva_buildstage 1-3
+tr_m7_nva_stage1_4 = global tr_m7_nva_buildstage 1-4
+tr_m7_nva_stage1_4_np = global tr_m7_nva_buildstage 1-4
+tr_m7_nva_stage2_0 = global tr_m7_nva_buildstage 0-2
+tr_m7_nva_stage2_3 = global tr_m7_nva_buildstage 2-3
+tr_m7_nva_stage2_persist = global tr_m7_nva_buildstage 2-100
+tr_m7_nva_stage3 = global tr_m7_nva_buildstage 3
+tr_m7_nva_stage3_np = global tr_m7_nva_buildstage 3
+tr_m7_nva_stage4_0 = global tr_m7_nva_buildstage 0-4
+tr_m7_nva_stage4_persist = global tr_m7_nva_buildstage 4-100
+tr_m7_nva_stage4_persist_banner = global tr_m7_nva_buildstage 4-100
+tr_m7_nva_stage5 = global tr_m7_nva_buildstage 5
+tr_m7_nva_stage5_np = global tr_m7_nva_buildstage 5
+tr_m7_nva_stage6_0 = global tr_m7_nva_buildstage 0-6
+tr_m7_nva_stage6_persist = global tr_m7_nva_buildstage 6-100
+tr_m7_nva_stage7 = global tr_m7_nva_buildstage 7
+tr_m7_nva_stage7_np = global tr_m7_nva_buildstage 7
+tr_m7_nva_stage8_persist = global tr_m7_nva_buildstage 8-100
+tr_m7_nva_stage9_persist = global tr_m7_nva_buildstage 9-100
+
+: Omaynis, The Kwama's Scuttle
+tr_m4_omaynisinn_c2 = global tr_m4_oma_innstage 2
+tr_m4_omaynisinn_d1 = global tr_m4_oma_innstage 0
+tr_m4_omaynisinn_d2 = global tr_m4_oma_innstage 0-1
+tr_m4_omaynisinn_e1 = global tr_m4_oma_innstage 1
+tr_m4_omaynisinn_e2 = global tr_m4_oma_innstage 2-100
+tr_m4_omaynisinn_e3 = global tr_m4_oma_innstage 3-100
+tr_m4_omaynisinnbanner_script = global tr_m4_oma_innstage 3-100
+
+: Firemoth + Sulfurwatch
+tr_fm_stage3perm_sc = global tr_fm_glob_state 3-100
+tr_fm_stage5perm_sc = global tr_fm_glob_state 5-100
+tr_fm_stage5rubble_sc = global tr_fm_glob_state 0-4
+tr_fm_stage5scaffold_sc = global tr_fm_glob_state 5-6
+tr_fm_stage7perm_sc = global tr_fm_glob_state 7-100
+tr_fm_stage7rubble_sc = global tr_fm_glob_state 0-6
+tr_fm_stage8perm_sc = global tr_fm_glob_state 8-100
+tr_fm_stage8rubble_sc = global tr_fm_glob_state 0-7
