@@ -1,7 +1,7 @@
 local config = require("TamrielRebuilt.config")
 
 event.register(tes3.event.initialized, function()
-	if config.firemothWarning == true and tes3.isModActive("TR_Mainland.esm") and not tes3.isModActive("TR_Firemoth_Vanilla_patch.esp") then
+	if config.firemothWarning == true and tes3.isModActive("TR_Mainland.esm") and not tes3.isModActive("TR_Firemoth_remover.esp") then
 		local firemothPlugin
 		
 		if tes3.isModActive("Siege at Firemoth.esp") then
@@ -20,7 +20,7 @@ event.register(tes3.event.initialized, function()
 
 		if firemothPlugin then
 			tes3ui.showNotifyMenu("Tamriel Rebuilt contains its own improved version of Fort Firemoth and its quests, which is incompatible with other plugins that add or modify the Siege of Firemoth." .. 
-									" Please either deactivate \"" .. firemothPlugin .. "\", use the vanilla Firemoth patch provided on Tamriel Rebuilt's Nexus page and website, or use a patch made specifically for your preferred Firemoth mod if it exists.")
+									" Please either deactivate \"" .. firemothPlugin .. "\", use the Firemoth remover plugin provided on Tamriel Rebuilt's Nexus page and website, or use a patch made specifically for your preferred Firemoth mod if it exists.")
 		end
 	end
 end)
