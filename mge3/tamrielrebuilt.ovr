@@ -45,3 +45,7 @@ tr_fm_stage7perm_sc = global tr_fm_glob_state 7-100
 tr_fm_stage7rubble_sc = global tr_fm_glob_state 0-6
 tr_fm_stage8perm_sc = global tr_fm_glob_state 8-100
 tr_fm_stage8rubble_sc = global tr_fm_glob_state 0-7
+tr_fm_stat_planksn=disable
+tr_fm_stat_boatsn=disable
+tr_fm_stat_boatfm=disable
+tr_fm_stat_plankfm=disable
