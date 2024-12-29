@@ -1,5 +1,6 @@
 local defaultConfig = {
-	firemothWarning = true
+	firemothWarning = true,
+	dataWarning = true,
 }
 
 return mwse.loadConfig("TamrielRebuilt", defaultConfig)
