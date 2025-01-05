@@ -1,0 +1,9 @@
+[package]
+name = "Project Cyrodiil"
+version = "24.12a"
+description = "Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. PC is entirely compatible with Skyrim: Home of the Nords and Tamriel Rebuilt, and includes a fully-featured new zone full of places to explore, quests to complete, and characters to meet."
+homepage = "https://www.nexusmods.com/morrowind/mods/44922"
+
+[dependencies.mods."Tamriel_Data"]
+version = ">=11"
+url = "https://www.nexusmods.com/morrowind/mods/44537"

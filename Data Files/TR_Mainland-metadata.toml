@@ -1,0 +1,12 @@
+[package]
+name = "Tamriel Rebuilt"
+version = "24.12"
+description = "Tamriel Rebuilt is a fan project working to build the mainland of Morrowind Province in The Elder Scrolls III: Morrowind, while preserving the original game’s creative vision and direction."
+homepage = "https://www.nexusmods.com/morrowind/mods/42145"
+
+[dependencies.mods."Tamriel_Data"]
+version = ">=11"
+url = "https://www.nexusmods.com/morrowind/mods/44537"
+
+[dependencies.mods."TD_Lua_Addon"]
+mwse-module = "tamrielRebuilt.main"

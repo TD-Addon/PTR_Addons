@@ -27,13 +27,5 @@ if config.firemothWarning == true then
 	end)
 end
 
-if config.dataWarning == true then
-	event.register(tes3.event.initialized, function()
-		if tes3.isModActive("TR_Mainland.esm") and not tes3.getObject("T_Com_Res_WeaponResartus") then
-				tes3ui.showNotifyMenu("Your copy of Tamriel_Data is too old for this version of Tamriel Rebuilt. Please install the latest version of Tamriel_Data, available on the Nexus or Tamriel Rebuilt's website, or severe problems will occur in-game.")
-		end
-	end)
-end
-
 -- Setup MCM
 dofile("TamrielRebuilt.mcm")

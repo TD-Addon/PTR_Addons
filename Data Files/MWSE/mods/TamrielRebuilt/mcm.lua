@@ -22,14 +22,6 @@ local function registerModConfig()
             table = config,
         },
     }
-    toggles:createOnOffButton{
-        label = "Tamriel_Data Version Warning",
-        description = "Provides a warning upon starting the game with Tamriel Rebuilt and an old version of Tamriel_Data.",
-        variable = mwse.mcm.createTableVariable{
-            id = "dataWarning",
-            table = config,
-        },
-    }
 
     template:register()
 end
