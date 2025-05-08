@@ -1,0 +1,10 @@
+TamrielRebuilt_modName: "Tamriel Rebuilt"
+
+Settings_TamrielRebuilt_Description: "Tamriel Data OpenMW Lua addon configuration."
+Settings_TamrielRebuilt_MiscName: "Miscellaneous"
+Settings_TamrielRebuilt_FiremothCompWarning: "Firemoth Compatibility Warning"
+Settings_TamrielRebuilt_FiremothCompDescription: "Provides a warning upon starting the game with Tamriel Rebuilt and an incompatible Firemoth plugin."
+FiremothCompWarning: "Tamriel Rebuilt contains its own improved version of Fort Firemoth and its quests,
+  which is incompatible with other plugins that add or modify the Siege of Firemoth.
+  Please either deactivate {plugin}, use the Firemoth remover plugin provided on Tamriel Rebuilt's Nexus page and website,
+  or use a patch made specifically for your preferred Firemoth mod if it exists."

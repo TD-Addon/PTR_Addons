@@ -1,1 +1,3 @@
 GLOBAL: scripts/tamrielrebuilt/strongholds.lua
+MENU: scripts/tamrielrebuilt/menu_settings.lua
+MENU: scripts/tamrielrebuilt/firemothcomp.lua
