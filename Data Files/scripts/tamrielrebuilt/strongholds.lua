@@ -188,6 +188,23 @@ local strongholds = {
 				visible = { lt = 8 }
 			}
 		}
+	},
+	-- Assault on Lake Coronati
+	{
+		journal = 'tr_m7_fg_hl_q5',
+		cells = {
+			{ 6, -44 }
+		},
+		scripts = {
+			{
+				id = 'tr_m7_hl_fg_q5_actsc',
+				visible = { gt = 9, lt = 100 }
+			},
+			{
+				id = 'tr_m7_hl_fg_q5_act2sc',
+				visible = { gt = 99 }
+			}
+		}
 	}
 }
 
@@ -278,8 +295,14 @@ local function updateStrongholds()
 	-- Stronghold construction states should be shared between all players,
 	-- as such we use the first player's globals and assume they match the others'
 	local globals = world.mwscript.getGlobalVariables(world.players[1])
+	local journals = types.Player.quests(world.players[1])
 	for _, stronghold in pairs(strongholds) do
-		local currentValue = globals[stronghold.global]
+		local currentValue
+		if stronghold.global ~= nil then
+			currentValue = globals[stronghold.global]
+		else
+			currentValue = journals[stronghold.journal].stage
+		end
 		local stop = updateStronghold(stronghold, currentValue)
 		if stop then
 			return -- Update at most one stronghold per frame
@@ -288,9 +311,17 @@ local function updateStrongholds()
 end
 
 local function saveState()
-	local out = {}
+	local out = {
+		version = 1,
+		globals = {},
+		journals = {}
+	}
 	for _, stronghold in pairs(strongholds) do
-		out[stronghold.global] = stronghold.value
+		if stronghold.global ~= nil then
+			out.globals[stronghold.global] = stronghold.value
+		else
+			out.journals[stronghold.journal] = stronghold.value
+		end
 	end
 	return out
 end
@@ -299,9 +330,26 @@ local function loadState(saved)
 	if saved == nil then
 		return
 	end
-	for global, value in pairs(saved) do
+	local globals
+	local journals
+	if saved.version == nil then
+		globals = saved
+		journals = {}
+	else
+		globals = saved.globals
+		journals = saved.journals
+	end
+	for global, value in pairs(globals) do
 		for _, stronghold in pairs(strongholds) do
 			if stronghold.global == global then
+				stronghold.value = value
+				break
+			end
+		end
+	end
+	for journal, value in pairs(journals) do
+		for _, stronghold in pairs(strongholds) do
+			if stronghold.journal == journal then
 				stronghold.value = value
 				break
 			end
