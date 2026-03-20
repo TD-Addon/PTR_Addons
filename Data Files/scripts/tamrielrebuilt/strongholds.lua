@@ -205,6 +205,19 @@ local strongholds = {
 				visible = { gt = 99 }
 			}
 		}
+	},
+	-- Stendarr Tower Haunting
+	{
+		journal = 'tr_m3_oe_stendarrtowerhaunting',
+		cells = {
+			{ 4, -19 }
+		},
+		scripts = {
+			{
+				id = 'tr_m3_oe_hauntpatrol',
+				visible = { gt = 125, lt = 129 }
+			}
+		}
 	}
 }
 

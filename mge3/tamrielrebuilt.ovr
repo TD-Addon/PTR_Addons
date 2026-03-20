@@ -50,6 +50,9 @@ tr_fm_stage8rubble_sc = global tr_fm_glob_state 0-7
 tr_m7_hl_fg_q5_actsc = journal tr_m7_fg_hl_q5 10-100
 tr_m7_hl_fg_q5_act2sc = journal tr_m7_fg_hl_q5 100
 
+: Stendarr Tower Haunting
+tr_m3_oe_hauntpatrol = journal tr_m3_oe_stendarrtowerhaunting 125-129
+
 [names]
 tr_fm_stat_planksn=disable
 tr_fm_stat_boatsn=disable
