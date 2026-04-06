@@ -215,7 +215,7 @@ local strongholds = {
 		scripts = {
 			{
 				id = 'tr_m3_oe_hauntpatrol',
-				visible = { gt = 125, lt = 129 }
+				visible = { gt = 124, lt = 130 }
 			}
 		}
 	}
