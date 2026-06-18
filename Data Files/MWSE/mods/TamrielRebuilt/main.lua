@@ -7,8 +7,16 @@ if config.firemothWarning == true then
 			local firemothPlugin = getActivePlugin(tes3.isModActive)
 
 			if firemothPlugin then
-				tes3ui.showNotifyMenu("Tamriel Rebuilt contains its own improved version of Fort Firemoth and its quests, which is incompatible with other plugins that add or modify the Siege of Firemoth." .. 
-										" Please either deactivate \"" .. firemothPlugin .. "\", use the Firemoth remover plugin provided on Tamriel Rebuilt's Nexus page and website, or use a patch made specifically for your preferred Firemoth mod if it exists.")
+				timer.frame.delayOneFrame(function()
+					tes3ui.showMessageMenu({
+						header = 'Incompatible Mods Detected',
+						message = "Tamriel Rebuilt contains its own improved version of Fort Firemoth and its quests, which is incompatible with other plugins that add or modify the Siege of Firemoth." .. 
+							" Please either deactivate \"" .. firemothPlugin .. "\", use the Firemoth remover plugin provided on Tamriel Rebuilt's Nexus page and website, or use a patch made specifically for your preferred Firemoth mod if it exists.",
+						buttons = {
+							{ text = tes3.findGMST(tes3.gmst.sOK).value }
+						}
+					})
+				end)
 			end
 		end
 	end)

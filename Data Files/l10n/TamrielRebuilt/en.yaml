@@ -8,3 +8,4 @@ FiremothCompWarning: "Tamriel Rebuilt contains its own improved version of Fort 
   which is incompatible with other plugins that add or modify the Siege of Firemoth.
   Please either deactivate {plugin}, use the Firemoth remover plugin provided on Tamriel Rebuilt's Nexus page and website,
   or use a patch made specifically for your preferred Firemoth mod if it exists."
+FiremothCompHeader: "Incompatible Mods Detected"
