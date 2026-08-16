@@ -1,6 +1,6 @@
 TamrielRebuilt_modName: "Tamriel Rebuilt"
 
-Settings_TamrielRebuilt_Description: "Tamriel Data OpenMW Lua addon configuration."
+Settings_TamrielRebuilt_Description: "Tamriel Rebuilt OpenMW Lua addon configuration."
 Settings_TamrielRebuilt_MiscName: "Miscellaneous"
 Settings_TamrielRebuilt_FiremothCompWarning: "Firemoth Compatibility Warning"
 Settings_TamrielRebuilt_FiremothCompDescription: "Provides a warning upon starting the game with Tamriel Rebuilt and an incompatible Firemoth plugin."
@@ -9,3 +9,5 @@ FiremothCompWarning: "Tamriel Rebuilt contains its own improved version of Fort 
   Please either deactivate {plugin}, use the Firemoth remover plugin provided on Tamriel Rebuilt's Nexus page and website,
   or use a patch made specifically for your preferred Firemoth mod if it exists."
 FiremothCompHeader: "Incompatible Mods Detected"
+
+NoTamrielData_Warning: "Tamriel_Data Lua addon is not loaded. Add Tamriel_Data.omwscripts and its files to the OpenMW content load order before tamrielrebuilt.omwscripts."
