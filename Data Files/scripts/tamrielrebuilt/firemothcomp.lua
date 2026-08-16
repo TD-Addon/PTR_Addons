@@ -19,6 +19,8 @@ if not menu_popup then
     return
 end
 
+local popups = {}
+
 if core.contentFiles.has('TR_Mainland.esm') and not core.contentFiles.has('TR_Firemoth_remover.esp') then
     local miscSettings = storage.playerSection('Settings_TamrielRebuilt_Misc')
 
@@ -28,6 +30,10 @@ if core.contentFiles.has('TR_Mainland.esm') and not core.contentFiles.has('TR_Fi
     local getActivePlugin = require('MWSE.mods.TamrielRebuilt.firemoth')
     local firemothPlugin = getActivePlugin(core.contentFiles.has)
     if firemothPlugin then
-        menu_popup.popup(l10n('FiremothCompHeader'), l10n('FiremothCompWarning', { plugin = firemothPlugin }))
+        table.insert(popups, menu_popup.popup(l10n('FiremothCompHeader'), l10n('FiremothCompWarning', { plugin = firemothPlugin })))
     end
 end
+
+return {
+    engineHandlers = menu_popup.getKeyEventHandlersForClosingPopups(popups)
+}
